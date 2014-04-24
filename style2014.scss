@@ -1,0 +1,230 @@
+$primary: rgb(25, 83, 104); //blue
+$light_primary: rgba(25, 83, 104, .5); //blue
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: helvetica neue;
+  font-size: 18px;
+  font-weight: 200;
+  
+  a {
+    color: black;
+  }
+  h3 {font-weight: 200;}
+  
+  .hero {
+    background-image: url("images/yaks-bg.png");
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+    
+    img {margin-top: 40px;}
+    
+    h1 {
+      font-weight: 200;
+    }
+  }
+  
+  .contain {
+    width: 980px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    height: 60px;
+    width: 100%;
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 100;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+    z-index: 1000;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+        &:first-child{
+          display: block;
+          float: left;
+          padding-left: 0;
+        }
+        &:last-child{
+          display: block;
+          float: right;
+        }
+      }
+    }
+    
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      &.active {
+        border-bottom: solid 5px white;
+      }
+    }
+  }
+  
+  p.description {
+    color: $primary;
+    text-align: center;
+    padding: 3em;
+  }
+  
+  h2 {
+    font-weight: 100;
+    font-size: 36px;
+  }
+  #services {
+    ul.services {
+      list-style: none;
+      text-align: center;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      li {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+        a {
+          color: $primary;
+          text-decoration: none;
+        }
+        img {
+          width: 117px;
+          height: 134px;
+          background-image: url("images/hexagon.png");
+          opacity: .5;
+        }
+      }
+    
+      li.active img, li:hover img {opacity: 1;}
+    }
+    
+    .more-info {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      >ul {
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        overflow-x: hidden;
+        text-align: center;
+        background-color: $light_primary;
+        -webkit-box-shadow:inset 0 5px 10px 0 rgba(0,0,0,.3);
+        box-shadow:inset 0 5px 10px 0 rgba(0,0,0,.3);
+        
+        li.slide{
+          width: 980px;
+          display: inline-block;
+          height: 350px;
+          text-align: left;
+          
+          .content {
+            width: 40%;
+            height: 300px;
+            float: left;
+            padding: 25px;
+          }
+          
+          
+        }
+      }
+    }
+    
+    .spacer {
+      height: 350px;
+    }
+  }
+  
+  .page {padding-top: 60px;}
+  
+  #about {
+    p {
+      line-height: 28px;
+      margin: 0 auto;
+      width: 85%;
+      padding-bottom: 2em;
+    }
+    ul.profiles {
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+      li {
+        display: inline-block;
+        width: 150px;
+        padding-left: 26px;
+        padding-right: 26px;
+        
+        &:first-child {padding-left: 0;}
+        &:last-child {padding-right: 0;}
+        
+        img {
+          width: 150px;
+          height: 150px;
+          background-color: $light_primary;
+        }
+        
+        .caption{
+          padding-top: 15px;
+          height: 60px;
+          width: 100%;
+          color: white;
+          background-color: $primary;
+          
+          em {font-size: 12px;}
+        }
+        
+      }
+    }
+  }
+  
+  #contact {
+    .inline-block {
+      float: left;
+      width: 50%;
+    }
+    
+    form {
+      width: 100%;
+      
+      input[type=text], textarea {
+        border: solid thin $primary;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        width: 80%;
+        padding: 1em;
+        margin-bottom: 1em;
+        display: block;
+      }
+      input[type=text] {height: 2em;}
+      textarea {height: 15em;}
+      
+      input[type=submit] {
+        float: right;
+        border: solid thin $primary;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background-color: $primary;
+        color: white;
+        margin-right: 15%;
+        padding: 1em;
+      }
+    }
+  }
+}

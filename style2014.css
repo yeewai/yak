@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica neue;
+  font-size: 18px;
+  font-weight: 200; }
+  body a {
+    color: black; }
+  body h3 {
+    font-weight: 200; }
+  body .hero {
+    background-image: url("images/yaks-bg.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white; }
+    body .hero img {
+      margin-top: 40px; }
+    body .hero h1 {
+      font-weight: 200; }
+  body .contain {
+    width: 980px;
+    margin: 0 auto; }
+  body nav {
+    height: 60px;
+    width: 100%;
+    background-color: #195368;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 100;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1000; }
+    body nav ul {
+      list-style: none;
+      padding: 0; }
+      body nav ul li {
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em; }
+        body nav ul li:first-child {
+          display: block;
+          float: left;
+          padding-left: 0; }
+        body nav ul li:last-child {
+          display: block;
+          float: right; }
+    body nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px; }
+      body nav a.active {
+        border-bottom: solid 5px white; }
+  body p.description {
+    color: #195368;
+    text-align: center;
+    padding: 3em; }
+  body h2 {
+    font-weight: 100;
+    font-size: 36px; }
+  body #services ul.services {
+    list-style: none;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    body #services ul.services li {
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      padding-left: 80px;
+      padding-right: 80px; }
+      body #services ul.services li a {
+        color: #195368;
+        text-decoration: none; }
+      body #services ul.services li img {
+        width: 117px;
+        height: 134px;
+        background-image: url("images/hexagon.png");
+        opacity: .5; }
+    body #services ul.services li.active img, body #services ul.services li:hover img {
+      opacity: 1; }
+  body #services .more-info {
+    position: absolute;
+    width: 100%;
+    left: 0; }
+    body #services .more-info > ul {
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      overflow-x: hidden;
+      text-align: center;
+      background-color: rgba(25, 83, 104, 0.5);
+      -webkit-box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+      body #services .more-info > ul li.slide {
+        width: 980px;
+        display: inline-block;
+        height: 350px;
+        text-align: left; }
+        body #services .more-info > ul li.slide .content {
+          width: 40%;
+          height: 300px;
+          float: left;
+          padding: 25px; }
+  body #services .spacer {
+    height: 350px; }
+  body .page {
+    padding-top: 60px; }
+  body #about p {
+    line-height: 28px;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 2em; }
+  body #about ul.profiles {
+    list-style: none;
+    text-align: center;
+    padding-left: 0; }
+    body #about ul.profiles li {
+      display: inline-block;
+      width: 150px;
+      padding-left: 26px;
+      padding-right: 26px; }
+      body #about ul.profiles li:first-child {
+        padding-left: 0; }
+      body #about ul.profiles li:last-child {
+        padding-right: 0; }
+      body #about ul.profiles li img {
+        width: 150px;
+        height: 150px;
+        background-color: rgba(25, 83, 104, 0.5); }
+      body #about ul.profiles li .caption {
+        padding-top: 15px;
+        height: 60px;
+        width: 100%;
+        color: white;
+        background-color: #195368; }
+        body #about ul.profiles li .caption em {
+          font-size: 12px; }
+  body #contact .inline-block {
+    float: left;
+    width: 50%; }
+  body #contact form {
+    width: 100%; }
+    body #contact form input[type=text], body #contact form textarea {
+      border: solid thin #195368;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      width: 80%;
+      padding: 1em;
+      margin-bottom: 1em;
+      display: block; }
+    body #contact form input[type=text] {
+      height: 2em; }
+    body #contact form textarea {
+      height: 15em; }
+    body #contact form input[type=submit] {
+      float: right;
+      border: solid thin #195368;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #195368;
+      color: white;
+      margin-right: 15%;
+      padding: 1em; }
