@@ -23,7 +23,7 @@ body {
     body .hero h1 {
       font-weight: 200; }
   body .contain {
-    width: 980px;
+    width: 1000px;
     margin: 0 auto; }
   body nav {
     height: 60px;
@@ -167,3 +167,30 @@ body {
       color: white;
       margin-right: 15%;
       padding: 1em; }
+  @media only screen and (max-width: 1000px) {
+    body .contain {
+      width: 95%; }
+    body .phone {
+      display: none; }
+    body #services ul.services {
+      padding: 0; }
+      body #services ul.services li {
+        width: 30%;
+        vertical-align: top;
+        padding: 0;
+        padding-top: 1em; }
+        body #services ul.services li img {
+          margin: 0 auto;
+          display: block; }
+    body #services .more-info > ul li.slide {
+      width: 100%; }
+      body #services .more-info > ul li.slide .content {
+        width: 90%; }
+        body #services .more-info > ul li.slide .content.img {
+          display: none; }
+    body #about ul.profiles > li, body #about ul.profiles li:first-child, body #about ul.profiles li:last-child {
+      padding: 26px; }
+    body #contact .inline-block {
+      width: 100%; }
+    body #contact img {
+      max-width: 100%; } }
