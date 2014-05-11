@@ -78,7 +78,7 @@ body {
         color: #195368;
         text-decoration: none; }
       body #services ul.services li img {
-        width: 117px;
+        width: 134px;
         height: 134px;
         background-image: url("images/hexagon.png");
         opacity: .5; }
@@ -107,6 +107,8 @@ body {
           height: 300px;
           float: left;
           padding: 25px; }
+        body #services .more-info > ul li.slide .img img {
+          max-height: 100%; }
   body #services .spacer {
     height: 350px; }
   body .page {
